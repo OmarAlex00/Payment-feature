@@ -5,4 +5,5 @@ class AppStrings {
   static const String shipping = 'Shipping';
   static const String total = 'Total';
   static const String completePayment = 'Complete Payment';
+  static const String paymentDetails = 'Payment Details';
 }

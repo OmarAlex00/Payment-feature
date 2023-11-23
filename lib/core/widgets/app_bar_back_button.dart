@@ -9,9 +9,14 @@ class CustomAppBarBackButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: SvgPicture.asset(
-        AssetManager.backButtonPath,
+    return GestureDetector(
+      onTap: () {
+        Navigator.of(context).pop();
+      },
+      child: Center(
+        child: SvgPicture.asset(
+          AssetManager.backButtonPath,
+        ),
       ),
     );
   }
