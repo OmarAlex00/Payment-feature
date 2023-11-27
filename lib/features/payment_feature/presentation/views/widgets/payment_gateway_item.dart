@@ -24,7 +24,7 @@ class PaymentGateWayItem extends StatelessWidget {
           color: Colors.white,
           shape: RoundedRectangleBorder(
             side: BorderSide(
-                width: isSelected ? 2.5 : 1.5,
+                width: isSelected ? 3 : 1.5,
                 color: isSelected
                     ? AppColors.buttonsColors
                     : AppColors.blackWithOpacity),
