@@ -21,27 +21,33 @@ class _PaymentDetailsBodyState extends State<PaymentDetailsBody> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          const PaymentGateWaysListView(),
-          CreditCardPaymentForm(
+    return CustomScrollView(
+      slivers: [
+        const SliverToBoxAdapter(child: PaymentGateWaysListView()),
+        SliverToBoxAdapter(
+          child: CreditCardPaymentForm(
             autovalidateMode: autovalidateMode,
             formKey: formKey,
           ),
-          CustomButton(
-            title: AppStrings.pay,
-            onTap: () {
-              if (formKey.currentState!.validate()) {
-                formKey.currentState!.save();
-                log('Success');
-              } else {
-                autovalidateMode = AutovalidateMode.always;
-              }
-            },
-          )
-        ],
-      ),
+        ),
+        SliverFillRemaining(
+          hasScrollBody: false,
+          child: Align(
+            alignment: Alignment.bottomCenter,
+            child: CustomButton(
+              title: AppStrings.pay,
+              onTap: () {
+                if (formKey.currentState!.validate()) {
+                  formKey.currentState!.save();
+                  log('Success');
+                } else {
+                  autovalidateMode = AutovalidateMode.always;
+                }
+              },
+            ),
+          ),
+        )
+      ],
     );
   }
 }
