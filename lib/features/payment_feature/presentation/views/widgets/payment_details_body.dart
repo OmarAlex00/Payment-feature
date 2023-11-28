@@ -16,9 +16,8 @@ class PaymentDetailsBody extends StatefulWidget {
 }
 
 class _PaymentDetailsBodyState extends State<PaymentDetailsBody> {
-  AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   final GlobalKey<FormState> formKey = GlobalKey();
-
+  AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
@@ -42,6 +41,7 @@ class _PaymentDetailsBodyState extends State<PaymentDetailsBody> {
                   log('Success');
                 } else {
                   autovalidateMode = AutovalidateMode.always;
+                  setState(() {});
                 }
               },
             ),
