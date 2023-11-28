@@ -45,4 +45,18 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     height: 0,
   );
+  static const TextStyle style20light = TextStyle(
+    color: AppColors.primaryTextColor,
+    fontSize: 20,
+    fontFamily: FontFamily.inter,
+    fontWeight: FontWeight.w400,
+    height: 0,
+  );
+  static const TextStyle style16 = TextStyle(
+    color: Color(0xff4D4D4D),
+    fontSize: 16,
+    fontFamily: 'Inter',
+    fontWeight: FontWeight.w400,
+    height: 0,
+  );
 }

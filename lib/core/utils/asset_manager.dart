@@ -8,4 +8,6 @@ class AssetManager {
   static const String payPalPath = '${imagePath}PayPal_Image.svg';
   static const String applePayPath = '${imagePath}Apple_Pay_Image.svg';
   static const String creditFramePath = '${imagePath}Credit_Frame.png';
+  static const String testBarCodePath = '${imagePath}Test_BarCode.png';
+  static const String masterCardPath = '${imagePath}Mastercard_Logo.svg';
 }

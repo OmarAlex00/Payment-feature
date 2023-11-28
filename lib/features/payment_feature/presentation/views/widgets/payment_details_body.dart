@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:checkout_feature/core/utils/app_strings.dart';
 import 'package:checkout_feature/core/widgets/custom_button.dart';
+import 'package:checkout_feature/features/payment_feature/presentation/views/screens/payment_complete_screen.dart';
 import 'package:checkout_feature/features/payment_feature/presentation/views/widgets/credit_card_payment_form.dart';
 import 'package:checkout_feature/features/payment_feature/presentation/views/widgets/payment_gateways_list_view.dart';
 import 'package:flutter/material.dart';
@@ -38,6 +39,9 @@ class _PaymentDetailsBodyState extends State<PaymentDetailsBody> {
               onTap: () {
                 if (formKey.currentState!.validate()) {
                   formKey.currentState!.save();
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const PaymentCompleteScreen(),
+                  ));
                   log('Success');
                 } else {
                   autovalidateMode = AutovalidateMode.always;

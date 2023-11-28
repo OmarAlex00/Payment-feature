@@ -5,4 +5,5 @@ class AppColors {
   static const Color primaryTextColor = Colors.black;
   static const Color primaryBackground = Colors.white;
   static const Color blackWithOpacity = Color(0xff7F7F7F);
+  static const Color paymentSuccessBody = Color(0xFFD9D9D9);
 }
