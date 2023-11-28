@@ -46,7 +46,7 @@ class PaymentCompleteBody extends StatelessWidget {
             ),
           ),
           Positioned(
-              bottom: MediaQuery.of(context).size.height * .25,
+              bottom: (MediaQuery.of(context).size.height * .25) - 5,
               left: 25,
               right: 25,
               child: const CustomDashedDivider()),
