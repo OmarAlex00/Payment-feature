@@ -41,7 +41,7 @@ class AppTextStyles {
   static const TextStyle style18Bold = TextStyle(
     color: Colors.black,
     fontSize: 18,
-    fontFamily: 'Inter',
+    fontFamily: FontFamily.inter,
     fontWeight: FontWeight.w600,
     height: 0,
   );
