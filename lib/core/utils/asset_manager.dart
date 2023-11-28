@@ -10,4 +10,5 @@ class AssetManager {
   static const String creditFramePath = '${imagePath}Credit_Frame.png';
   static const String testBarCodePath = '${imagePath}Test_BarCode.png';
   static const String masterCardPath = '${imagePath}Mastercard_Logo.svg';
+  static const String checkMarkPath = '${iconsPath}Check_Mark.svg';
 }
