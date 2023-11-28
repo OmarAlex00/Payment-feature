@@ -14,7 +14,7 @@ class OrderTotalRow extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Row(
         children: [
-          Text(
+          const Text(
             AppStrings.total,
             style: AppTextStyles.style24,
           ),
