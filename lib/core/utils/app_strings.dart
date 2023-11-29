@@ -10,4 +10,11 @@ class AppStrings {
   static const String paypal = 'PayPal';
   static const String applePAy = 'Apple Pay';
   static const String pay = 'Pay';
+  static const String thankYouTitle = 'Thank you!';
+  static const String thankYouBody = 'Your transaction was successful';
+  static const String date = 'Date';
+  static const String time = 'Time';
+  static const String to = 'To';
+  static const String paid = 'PAID';
+  static const String confirm = 'Confirm';
 }

@@ -1,4 +1,3 @@
-import 'package:checkout_feature/core/utils/asset_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_credit_card/flutter_credit_card.dart';
 
@@ -23,7 +22,6 @@ class _CreditCardPaymentFormState extends State<CreditCardPaymentForm> {
           isHolderNameVisible: true,
           cardNumber: cardNumber,
           expiryDate: expiryDate,
-          backgroundImage: AssetManager.creditFramePath,
           cardHolderName: cardHolderName,
           cvvCode: cvvCode,
           showBackView: showBack,

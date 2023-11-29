@@ -10,7 +10,7 @@ class PaymentCompleteBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 20, right: 20, bottom: 60),
+      padding: const EdgeInsets.only(left: 20, right: 20, bottom: 50, top: 10),
       child: Stack(
         clipBehavior: Clip.none,
         children: [

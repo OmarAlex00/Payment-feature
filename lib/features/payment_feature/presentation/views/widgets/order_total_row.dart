@@ -6,12 +6,14 @@ class OrderTotalRow extends StatelessWidget {
   const OrderTotalRow({
     super.key,
     required this.cost,
+    this.padding,
   });
   final String cost;
+  final double? padding;
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: padding ?? 0),
       child: Row(
         children: [
           const Text(
